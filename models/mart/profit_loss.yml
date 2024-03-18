@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: profit_loss
+    description: It gives the first and the last order date of the customer
+    columns:
+      - name: net_profit
+        description: profit from the order
+        tests:
+          - not_null
+      - name: Ord_id
+        description: ID of the order
+        tests:
+          - not_null
+
+
+          

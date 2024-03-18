@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: first_last_order
+    description: It gives the first and the last order date of the customer
+    columns:
+      - name: Customer_Name
+        description: Name of the customer
+        tests:
+          - not_null
+      - name: Cust_id
+        description: ID of the customer
+        tests:
+          - not_null
+          - unique
+      - name: most_recent_date
+        description: Most recent order of the customer
+        tests:
+          - not_null
+      - name: first_ordered_date
+        description: First order of the customer
+        tests:
+          - not_null
+
+      - name: Lifetime_Ordered_Value
+        description: Total Sale of the customer in his lifetime 
+        tests:
+          - not_null
+      
+      - name: total_orders
+        description: Total products bought by customer in his lifetime 
+        tests:
+          - not_null
+
+
+          

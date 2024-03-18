@@ -1,0 +1,63 @@
+version: 2
+
+models:
+  - name: product_cat_subcat
+    description: It gives the first and the last order date of the customer
+    columns:
+      - name: Ord_id
+        description: ID of the order
+        tests:
+          - not_null
+      - name: Prod_id
+        description: ID of the Product
+        tests:
+          - not_null
+      - name: Ship_id
+        description: ID of the shipping
+        tests:
+          - not_null
+      - name: Cust_id
+        description: ID of the customer
+        tests:
+          - not_null
+
+      - name: Sales
+        description: sale value of product
+        tests:
+          - not_null
+      
+      - name: Discount
+        description: Discount of product 
+        tests:
+          - not_null
+
+      - name: Order_Quantity
+        description: Products bought 
+        tests:
+          - not_null
+
+      - name: Profit
+        description: Profit
+        tests:
+          - not_null
+      
+      - name: Shipping_cost
+        description: cost of shipping the product
+        tests:
+          - not_null
+      
+      - name: Product_Base_Margin
+        description: base margin 
+        tests:
+          - not_null
+
+      - name: PRODUCT_CATEGORY
+        description: category product falls into
+        tests:
+          - not_null
+      
+      - name: PRODUCT_SUB_CATEGORY
+        description: sub category of the product 
+        tests:
+          - not_null
+          

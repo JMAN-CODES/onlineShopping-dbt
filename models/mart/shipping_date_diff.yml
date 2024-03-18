@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: shipping_date_diff
+    description: It gives the first and the last order date of the customer
+    columns:
+      - name: Ord_id
+        description: ID of the order
+        tests:
+          - not_null
+      - name: Prod_id
+        description: ID of the Product
+        tests:
+          - not_null
+      - name: Ship_id
+        description: ID of the shipping
+        tests:
+          - not_null
+      - name: Cust_id
+        description: ID of the customer
+        tests:
+          - not_null
+      
+      - name: Shipping_Cost
+        description: shipping cost of the product
+        tests:
+          - not_null
+
+      - name: Order_date
+        description: products ordered on this date
+        tests:
+          - not_null
+
+      - name: Ship_date
+        description: products got shipped on this date
+        tests:
+          - not_null
+      
+      - name: Ship_mode
+        description: mode of shipping
+        tests:
+          - not_null
+      
+      - name: difference_in_days
+        description: the days difference between ordered and shipped date
+        tests:
+          - not_null
+          
